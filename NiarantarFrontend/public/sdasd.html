@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Word in DOM</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="highlightInput" onchange="highlightOnChange()">
+    <p>This is a sample text where we want to highlight a specific word.</p>
+    <p>This is a sample text where we want to highlight a specific word.</p>
+
+    <script>
+        function highlightWord(word) {
+            // Get all text nodes within the body
+            const textNodes = getTextNodes(document.body);
+
+            // Loop through each text node and replace the word with a span having a class for highlighting
+            textNodes.forEach(node => {
+                const content = node.nodeValue;
+                const regex = new RegExp(`\\b${word}\\b`, 'gi');
+
+                if (regex.test(content)) {
+                    const span = document.createElement('span');
+                    span.className = 'highlight';
+
+                    // Replace the word with the highlighted span
+                    const highlightedContent = content.replace(regex, match => `<span class="highlight">${match}</span>`);
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = highlightedContent;
+
+                    // Append the children of the temporary div (with the highlighted span) to the actual node
+                    while (tempDiv.firstChild) {
+                        node.parentNode.insertBefore(tempDiv.firstChild, node);
+                    }
+
+                    // Remove the original text node
+                    node.parentNode.removeChild(node);
+                }
+            });
+        }
+
+        function getTextNodes(node) {
+            const textNodes = [];
+            if (node.nodeType === Node.TEXT_NODE) {
+                textNodes.push(node);
+            } else {
+                for (const childNode of node.childNodes) {
+                    textNodes.push(...getTextNodes(childNode));
+                }
+            }
+            return textNodes;
+        }
+
+
+        highlightWord('word');
+    </script>
+</body>
+</html>

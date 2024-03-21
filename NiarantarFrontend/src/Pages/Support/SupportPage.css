@@ -1,0 +1,36 @@
+.Form-content{
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 24px; */
+}
+.categorysection{
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* margin-top: "2%"; */
+}
+.categoryheading{
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.titleticket{
+    font-family: 'Lora';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icons{
+    height: 31px;
+    width: 58px;
+}
+.uploadBrowse{
+    background-color: "rgba(192, 192, 192, 1)";
+    color: white;
+}

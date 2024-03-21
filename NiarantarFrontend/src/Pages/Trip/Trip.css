@@ -1,0 +1,17 @@
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+  
+    height: 600px;
+  }
+ 
+  
+  th, td {
+    border-bottom: 1px solid #ddd; 
+    padding: 14px 16px 14px 16px; /* Add padding */
+    /* text-align: left; */
+  }
+  
+  .tripform{
+    font-family: "Lora";
+  }

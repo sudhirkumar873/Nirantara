@@ -1,0 +1,17 @@
+.textarea-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .textarea-container textarea {
+    padding-left: 30px; /* Adjust the padding-left to accommodate the images */
+    resize: none; /* Prevent resizing of the textarea */
+  }
+  
+  .textarea-container img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px; /* Adjust the left position according to your design */
+  }
+  

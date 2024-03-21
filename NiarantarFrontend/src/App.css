@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins' !important; */
+}
+
+.index >div > div{
+  height: 100vh !important;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+/* For the Header */
+.pageHeading{
+  font-size: 24px;
+}
+
+.maincontainer{
+  display:flex;
+  flex-direction:column; 
+  background-color: #fff;
+  padding:20px;
+  /* margin-left: -10px; */
+ width: 100%;
+ height: 80vh;
+ overflow-y: scroll;
+ 
+}
+/* For Smaller Screens */
+
+/* Dashboard 3rd Container*/
+.topcontainer{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.topcontainer1{
+  height: 300px;
+  width: 100%;
+}
+.topcontainer2{
+  height: 300px;
+  width: 100%;
+}
+.topcontainer3{
+  height: 300px;
+  width: 100%;
+}
+
+
+.bottomcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 250px;
+  justify-content: space-evenly
+  
+};
+
+
+.bottomcontainer1{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+}
+.bottomcontainer2{
+  display: flex;
+  flex-direction:column;
+
+  height: 100%;
+}
+.container1{
+  display: flex;
+  height: 150px;
+  width: 400px;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+.container2{
+  display: flex;
+  height: 150px;
+  width: 400px;
+  flex-direction: row;
+  justify-content:space-evenly;
+  
+}
+.topcontainerSmaller1{
+  display: flex;
+  height: 130px;
+  width: 160px;
+  flex-direction: column;
+  background-color: #fff;
+  
+}
+.topcontainerSmaller2{
+  display: flex;
+  height: 130px;
+  width: 160px;
+  flex-direction: column;
+  background-color: #fff;
+  
+}
+.topcontainerSmaller3{
+  display: flex;
+  height: 130px;
+  width: 160px;
+  flex-direction: column;
+  background-color: #fff;
+  
+}
+.topcontainerSmaller4{
+  display: flex;
+  height: 130px;
+  width: 160px;
+  flex-direction: column;
+  background-color: #fff;
+}
+.smalltopcontainer2col1{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.smalltopcontainer2col2{
+  display:flex;
+  flex-direction: row;
+}
+.smalltopcontainer2col3{
+  display:flex;
+  flex-direction: row;
+}
+.smalltopcontainer2col4{
+  display:flex;
+  flex-direction: row;
+}
+.smalltopcontainer2col1row2{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.smalltopcontainer2col3{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.smalltopcontainer2col4{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.topcontainer2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.topcontainer1row1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.topcontainer1row2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.topcontainer1row3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.topcontainer1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Addressbutton{
+  display: flex;
+  flex-direction: row;
+}
+.Dropdown{
+  background-color: #fff;
+  border-radius: 7%;
+}
+.Heading{
+  margin-bottom: 2%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.tableWapper{
+  height: 600px;
+  width: 100%;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+
+.tableWapper table{
+  border: 1px solid #ddd;
+}
+
+/* table */
+.styled-table {
+  /* width: 1010px; */
+  max-height: 400px;
+  border-collapse: collapse;
+  font-family: 'Lora';
+  overflow-y: scroll;
+  /* border: 1px solid black; */
+}
+
+.styled-table thead {
+  position: sticky;
+  top: -2px;
+  background-color: #f4f4f4;
+
+ 
+}
+/* For Heading of the Entire Table */
+.table-heading {
+  font-family:'Lora';
+  font-weight: 600;
+  font-size: "30px";
+  line-height: "38px";
+  /* border: 1px solid black; */
+}
+
+.styled-table th {
+  padding: '8px';
+  /* text-align: left; */
+  font-family: 'Lora';
+  font-size: '16px';
+  font-weight: 600;
+  line-height: '24px';
+  /* border: 1px solid black; */
+}
+.styled-table td {
+  font-size: '16px';
+  font-weight: 400;
+  line-height: '24px';
+}
+
+
+.even-row {
+  background-color: rgba(223, 237, 209, 0.4);
+}
+
+.odd-row {
+  /* Add styles for odd rows if needed */
+  background-color: #fff;
+}
+/* Location page Only */
+/* location-search-input */
+
+.autocomplete-dropdown-container {
+  position: relative;
+  top: 5px; /* Adjust as needed */
+  /* border: 1px solid green; */
+  /* background-color: green */
+  ;
+}
+.Addressbutton {
+  display: flex;
+  flex-direction: column;
+  /* Add other flex properties as needed */
+}
+/* For the Map Picker */
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+.App {
+  height: 280px;
+  width: 700px;
+  border: "1px solid black";
+}
+.ReactModal__Overlay{
+  background-color: rgba(0,0,0,.7) !important;
+}
+
+.graphHeadline{
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.df{
+  display: flex;
+}
+.jsb{
+  justify-content: space-between;
+}
+
+
+.topcontainer1row2{
+  position: relative;
+  padding: 10px;
+}
+.topcontainer1row2::before {
+  content: "60%"; 
+  /* content: var(--increment);  */
+  font-size: 28px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%; 
+  left: 51%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+.file-upload-area {
+  border: 2px dotted #ccc;
+  padding: 20px;
+  text-align: center;
+}
+.uploadBrowse{
+  padding: 2px 5px;
+  background: #333;
+  color: #fff;
+  border-radius:4px;
+}
+
+.sub-btn{
+  width: 100%;
+  padding: 5px 10px;
+  background: #111;
+}
+.react-datepicker-wrapper{
+  width: 100%;
+}
+.react-datepicker-wrapper > div >div{
+  width: 100%;
+}
+/* Default styles for the sidebar */
+.sidebar {
+  width: 240px !important;
+}
+
+/* Media query for screens larger than or equal to desktop size */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    width: 238px !important;
+  }
+}
+
+
+form input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.topcontainer3{
+
+}
+
+.container1 div ,.container2 div{
+  background: rgb(228 228 228 / 17%);
+  border-radius: 12px;
+  
+}
+
+
+
+.smalltopcontainer2col1row2 ,.smalltopcontainer2col3,.smalltopcontainer2col4{
+  background:rgb(228 228 228 / 17%);
+  margin: 0px 27px;
+  border-radius: 12px;
+  padding: 10px;
+  /* width: 240px; */
+
+}
+
+.EmissionContainer{
+   width: 100%;
+   background:rgb(228 228 228 / 17%);
+   border-radius: 12px;
+   padding: 10px;
+}
+
+
+.dashboard{
+  height: 80vh;
+  overflow-y: scroll;
+}
+.currenthead{
+  position: absolute;
+  margin-top: -258px;
+  margin-left: -7px;
+}
+
+
+.navbar{
+  margin-bottom: 20px;
+}
+
+
+#menu-userRole ul{
+  height: 200px;
+  overflow-y: scroll  ;
+  /* background-color: red; */
+}
+
+
+
+.co2details p{
+  font-size: 18px;
+  width: 20%;
+}
+
+.co2details p span{
+  font-size: 16px;
+  color: rgb(98, 90, 90);
+  font-weight: 500;
+}
+
+.overflow {
+  height: 50px; /* or any other width */
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden; /* Hides the overflowing content */
+  text-overflow: ellipsis; /* Truncates with ellipsis */
+  max-width: 200px;
+
+}
+
+.transparentInput {
+  border: none;
+  outline: none; /* Remove the outline on focus */
+}

@@ -1,0 +1,37 @@
+/* FuelPage.css */
+.fuel-table-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+  }
+  
+  .styled-table {
+    width: 100%;
+    min-width: 100%; /* Optional: Set a minimum width for larger screens */
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Other table styling as needed */
+  
+  @media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .styled-table {
+      /* Make table cells stack vertically on smaller screens */
+      display:table-cell
+    }
+  
+    .styled-table th,
+    .styled-table td {
+      display: block;
+      width: 100%;
+      text-align:center;
+    }
+  
+    .styled-table th:first-child,
+    .styled-table td:first-child {
+      padding-top: 1rem; /* Add extra padding for first row cells */
+    }
+  }
+  
+  .fuelform{
+    font-family: "Lora";
+  }

@@ -1,0 +1,85 @@
+.app {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 90%;
+    height: 100%;
+    color: #6F6B7D;
+    padding: 20px;
+    /* border: 1px solid black; */
+  }
+  .logo{
+    width: 100%;
+    border: 0;
+    padding-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Optional border */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+ 
+  
+  li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #DFEDD1;
+    border-radius: 5%;
+  }
+  
+
+  
+  ul li:not(:nth-child(7)):hover {
+    background-color: #DFEDD1;
+    border-radius: 5%;
+  }
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  ul   p{
+    color: rgb(184, 182, 182);
+   margin-top: 20px;
+   margin-left: 10px;
+  }
+
+  
+  /* Add styles for small screens (hamburger menu) */
+  .sidebar {
+    /* Existing styles */
+  
+    @media screen and (max-width: 768px) {
+      width: 80px; /* Adjust the width for the collapsed sidebar */
+      overflow: hidden;
+    }
+  
+    @media screen and (max-width: 768px) {
+      .logo img {
+        display: none; /* Hide the logo on smaller screens */
+      }
+  
+      ul {
+        display: none; /* Hide the list items by default on smaller screens */
+      }
+  
+      &.open {
+        width: 250px; /* Adjust the width for the expanded sidebar */
+      }
+  
+      &.open ul {
+        display: block; /* Show the list items when the sidebar is open */
+      }
+    }
+  }
